@@ -14,8 +14,8 @@ function setup() {
         audio: false,
         flipped: true,
     });
-    handPose.detectStart(video, (results) => { hands = results; });
     video.hide();
+    handPose.detectStart(video, (results) => { hands = results; });
 
 }
 
