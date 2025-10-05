@@ -28,7 +28,7 @@ function draw() {
             leftHand.index_finger_tip.x, leftHand.index_finger_tip.y,
             rightHand.index_finger_tip.x, rightHand.index_finger_tip.y
         );
-        if (fDist < 50 && leftHand.thumb_tip.y < leftHand.wrist.y && rightHand.thumb_tip.y < rightHand.wrist.y) {
+        if (fDist < 50 && leftHand.thumb_tip.y < leftHand.index_finger_tip.y && rightHand.thumb_tip.y < rightHand.index_finger_tip.y) {
             detector.innerText = "uwu\n👉👈";
         } else {
             detector.innerText = "No uwu detected";
