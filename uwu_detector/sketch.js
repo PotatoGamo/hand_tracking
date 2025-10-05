@@ -34,6 +34,8 @@ function draw() {
             detector.innerText = "No uwu detected";
         }
 
+    } else {
+        detector.innerText = "No uwu detected";
     }
     // debug.innerText = `Hands detected: ${hands.length}\ndistance: ${hands.length == 2 ? fDist : "N/A"}`;
 }
