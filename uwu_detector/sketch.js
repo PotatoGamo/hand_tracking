@@ -29,15 +29,18 @@ function draw() {
             rightHand.index_finger_tip.x, rightHand.index_finger_tip.y
         );
         if (fDist < 50 && leftHand.thumb_tip.y < leftHand.index_finger_tip.y && rightHand.thumb_tip.y < rightHand.index_finger_tip.y) {
-            detector.innerText = "uwu\n👉👈";
+            detector.innerHTML = "uwu\n👉👈";
+            meme.style.display = 'block';
         } else {
-            detector.innerText = "No uwu detected";
+            detector.innerHTML = "No uwu detected";
+            meme.style.display = 'none';
         }
 
     } else {
-        detector.innerText = "No uwu detected";
+        detector.innerHTML = "No uwu detected";
+        meme.style.display = 'none';
     }
-    // debug.innerText = `Hands detected: ${hands.length}\ndistance: ${hands.length == 2 ? fDist : "N/A"}`;
+    // debug.innerHTML = `Hands detected: ${hands.length}\ndistance: ${hands.length == 2 ? fDist : "N/A"}`;
 }
 
 const clamp = (min, num, max) => Math.min(Math.max(num, min), max);
